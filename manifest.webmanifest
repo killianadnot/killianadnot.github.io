@@ -1,7 +1,7 @@
 {
     "short_name": "GinkobusPWA",
     "name": "Ginkobus PWA",
-    "start_url": "",
+    "start_url": "index.html",
     "background_color": "#CC3300",
     "theme_color": "#CC7400",
     "display": "standalone",
