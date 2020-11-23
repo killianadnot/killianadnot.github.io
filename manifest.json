@@ -12,12 +12,6 @@
       "type": "image/png"
     },
     {
-        "src":"/icons/maskable_icon.png",
-        "type":"image/png",
-        "sizes":"274x274",
-        "purpose":"maskable"
-    },
-    {
       "src": "icons/icon-64.png",
       "sizes": "64x64",
       "type": "image/png"
@@ -56,6 +50,12 @@
       "src": "icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+        "src":"/icons/maskable_icon.png",
+        "type":"image/png",
+        "sizes":"274x274",
+        "purpose":"maskable"
     }
   ]
 
