@@ -1,7 +1,7 @@
 {
     "short_name": "GinkobusPWA",
     "name": "Ginkobus PWA",
-    "start_url": "https://killianadnot.github.io/",
+    "start_url": "killianadnot.github.io/index.html",
     "background_color": "CC3300",
     "theme_color": "#CC7400",
     "display": "standalone",
@@ -10,6 +10,12 @@
       "src": "icons/icon-32.png",
       "sizes": "32x32",
       "type": "image/png"
+    },
+    {
+        "src":"/icons/maskable_icon.png",
+        "type":"image/png",
+        "sizes":"274x274",
+        "purpose":"maskable"
     },
     {
       "src": "icons/icon-64.png",
