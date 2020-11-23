@@ -37,7 +37,7 @@ self.addEventListener('install', (e) => {
 
 self.addEventListener('fetch', function (event) {
     event.respondWith(
-      caches.open('ginko-dynamic').then(function (cache) {
+      caches.open(cacheName).then(function (cache) {
         return cache.match(event.request).then(function (response) {
           return (
             response ||
