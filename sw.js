@@ -1,6 +1,6 @@
-var cacheName = "ginko-v1"
+var cacheName = "ginko-v1";
 
-var images = ['icon-32', 'icon-64', 'icon-96', 'icon-128', 'icon-168', 'icon-180', 'icon-192', 'icon-256', 'icon-512'];
+var images = ["icon-32", "icon-64", "icon-96", "icon-128", "icon-168", "icon-180", "icon-192", "icon-256", "icon-512"];
 
 var contentCache = [];
 
