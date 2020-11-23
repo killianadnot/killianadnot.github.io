@@ -1,8 +1,8 @@
-var cacheName = "ginko-PWA"
+var cacheName = "ginko-v1"
 
 var images = ['icon-32', 'icon-64', 'icon-96', 'icon-128', 'icon-168', 'icon-180', 'icon-192', 'icon-256', 'icon-512'];
 
-var contentCache;
+var contentCache = [];
 
 for(var i=0; i<images.length; i++) {
   contentCache.push('icons/'+games[i]+'.png');
