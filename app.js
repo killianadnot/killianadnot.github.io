@@ -12,6 +12,10 @@ document.addEventListener("DOMContentLoaded", function (_e) {
             Fonctions à compléter dans la dernière partie du TP 
     ******************************************************************/
     
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+    };
+
     // Fonction exécutée quand on clique sur l'icône de géolocalisation 
     function geoloc() {
         if ("geolocation" in navigator) {
