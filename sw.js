@@ -5,7 +5,7 @@ var images = ['icon-32', 'icon-64', 'icon-96', 'icon-128', 'icon-168', 'icon-180
 var contentCache = [];
 
 for(var i=0; i<images.length; i++) {
-  contentCache.push('icons/'+games[i]+'.png');
+  contentCache.push('/icons/'+images[i]+'.png');
 }
 
 contentCache.push('index.html');
@@ -18,19 +18,19 @@ self.addEventListener('install', (e) => {
         return cache.addAll(contentCache);
       })
     );
-  });
+});
 
-  self.addEventListener('fetch', (e) => {
+self.addEventListener('fetch', (e) => {
     e.respondWith(
-      caches.match(e.request).then((r) => {
+        caches.match(e.request).then((r) => {
             console.log('[Service Worker] Fetching resource: '+e.request.url);
-        return r || fetch(e.request).then((response) => {
-                  return caches.open(cacheName).then((cache) => {
-            console.log('[Service Worker] Caching new resource: '+e.request.url);
-            cache.put(e.request, response.clone());
-            return response;
-          });
-        });
-      })
+            return r || fetch(e.request).then((response) => {
+                return caches.open(cacheName).then((cache) => {
+                    console.log('[Service Worker] Caching new resource: '+e.request.url);
+                    cache.put(e.request, response.clone());
+                    return response;
+                });
+            });
+        })
     );
-  });
+});
